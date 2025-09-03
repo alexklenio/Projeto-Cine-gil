@@ -9,9 +9,10 @@ total_ingressos = 0
 print("\n-=-=-=-=-= Sistema Cine Ágil =-=-=-=-=--=-=- \n")
 
 
-ingressos = int(input("Quantos ingressos você deseja comprar"))
+qtd_ingressos = int(input("Quantos ingressos você deseja comprar"))
 
-for ingresso in range(ingressos):
+for ingresso in range(qtd_ingressos):
+    
     print("\nPara encerrar sua compra digite -1")
     print()
     idade =  int(input("informe sua idade: "))
