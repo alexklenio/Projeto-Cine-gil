@@ -6,7 +6,7 @@ valor_total = 0
 total_ingressos = 0
 
 
-print("-=-=-=-=-= Sistema Cine Ágil =-=-=-=-=--=-=- \n")
+print("\n-=-=-=-=-= Sistema Cine Ágil =-=-=-=-=--=-=- \n")
 
 
 while True:
@@ -25,22 +25,19 @@ while True:
                 print(f"\nPreço normal: {inteira:.2f},")
                 print("Ingresso Normal adicionado!")
                
-                
 
             else:
                 valor = meia
                 print(f"\nPreço Estudante: R${meia:.2f}")
                 print("Ingresso Estudante adicionado!")
                 
-    
     else:
-        
-            valor = meia
-            print(f"\nPreço infantil: R${meia:.2f}")
-            print("Ingresso Infantil adicionado!")
+    
+        valor = meia
+        print(f"\nPreço infantil: R${meia:.2f}")
+        print("Ingresso Infantil adicionado!")
            
-
-            
+          
     valor_total += valor
     total_ingressos +=1
 
@@ -49,4 +46,4 @@ while True:
             break 
 
 print(f"\nO valor total dos seus ingressos é R$ {valor_total:.2f}")
-print(f"Total de ingressos comprados: {total_ingressos}")
+print(f"Total de ingressos comprados: {total_ingressos}\n")
