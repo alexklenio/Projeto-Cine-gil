@@ -9,16 +9,16 @@ total_ingressos = 0
 print("\n-=-=-=-=-= Sistema Cine Ágil =-=-=-=-=--=-=- \n")
 
 
-while True:
+ingressos = int(input("Quantos ingressos você deseja comprar"))
 
+for ingresso in range(ingressos):
     print("\nPara encerrar sua compra digite -1")
     print()
     idade =  int(input("informe sua idade: "))
    
-    if idade == -1:
-        break
+ 
 
-    elif idade >= 12:
+    if idade >= 12:
             est = input("É estudante? Digite 'S' para sim e 'N' para não: ").upper().strip()
             if est == "N":
                 valor = inteira
@@ -41,9 +41,7 @@ while True:
     valor_total += valor
     total_ingressos +=1
 
-    prej = input("\nGostaria de adicionar mais um ingresso ao pedido: ").upper().strip()
-    if prej == "N":
-            break 
+    
 
 print(f"\nO valor total dos seus ingressos é R$ {valor_total:.2f}")
 print(f"Total de ingressos comprados: {total_ingressos}\n")
