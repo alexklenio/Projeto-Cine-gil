@@ -3,6 +3,7 @@ meia = 15
 estudante = meia
 valor = 0
 valor_total = 0
+total_ingressos = 0
 
 
 print("-=-=-=-=-= Sistema Cine Ágil =-=-=-=-=--=-=- \n")
@@ -18,25 +19,34 @@ while True:
         break
 
     elif idade >= 12:
-        est = input("É estudante? Digite 'S' para sim e 'N' para não: ").upper().strip()
-        if est == "N":
-            valor = inteira
-            print(f"\nPreço normal: {inteira:.2f},")
-            print("Ingresso Normal adicionado!")
-            valor_total += valor
-        else:
-            valor = meia
-            print(f"\nPreço Estudante: R${meia:.2f}")
-            print("Ingresso Estudante adicionado!")
-            valor_total += valor
+            est = input("É estudante? Digite 'S' para sim e 'N' para não: ").upper().strip()
+            if est == "N":
+                valor = inteira
+                print(f"\nPreço normal: {inteira:.2f},")
+                print("Ingresso Normal adicionado!")
+               
+                
+
+            else:
+                valor = meia
+                print(f"\nPreço Estudante: R${meia:.2f}")
+                print("Ingresso Estudante adicionado!")
+                
     
     else:
         
-        valor = meia
-        print(f"\nPreço infantil: R${meia:.2f}")
-        print("Ingresso Infantil adicionado!")
+            valor = meia
+            print(f"\nPreço infantil: R${meia:.2f}")
+            print("Ingresso Infantil adicionado!")
+           
 
-        valor_total += valor
+            
+    valor_total += valor
+    total_ingressos +=1
 
+    prej = input("\nGostaria de adicionar mais um ingresso ao pedido: ").upper().strip()
+    if prej == "N":
+            break 
 
-print(f"\nO valor total dos seus ingressos R$ {valor_total:.2f}")
+print(f"\nO valor total dos seus ingressos é R$ {valor_total:.2f}")
+print(f"Total de ingressos comprados: {total_ingressos}")
